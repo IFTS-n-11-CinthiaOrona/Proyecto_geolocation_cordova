@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Por Hacer
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Contenido listas -->
+  <app-listas [tipo]="'por hacer'"></app-listas>
+
+  <!-- Boton para crear nuevas listas -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="AgregarLista()">
+    <ion-fab-button>
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

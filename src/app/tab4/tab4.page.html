@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Geolocation</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-button expand="block" (click)="geoLocalizar()">Localizar</ion-button>
+      <ion-list>
+        <ion-item *ngFor="let log of localizacion">
+          {{ log }}
+        </ion-item>
+      </ion-list>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
